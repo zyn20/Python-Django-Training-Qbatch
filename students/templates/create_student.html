@@ -1,0 +1,15 @@
+<!-- create_student.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Student</title>
+</head>
+<body>
+    <h1>Create Student</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}  <!-- Render form fields as paragraph elements -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
